@@ -1,14 +1,11 @@
 // index.tsx
-import { FC } from "react";
-
 import { Box } from "@material-ui/core";
+import Intro from "@src/components/intro/Intro";
 
-const Home: FC = () => {
+export default function Home() {
   return (
-    <div>
-      <Box>안녕</Box>
-    </div>
+    <Box>
+      <Intro />
+    </Box>
   );
-};
-
-export default Home;
+}
