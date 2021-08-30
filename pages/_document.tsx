@@ -1,18 +1,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 // eslint-disable-next-line no-use-before-define
-import React from "react";
-import { ServerStyleSheets } from "@material-ui/core/styles";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from 'react';
+import { ServerStyleSheets } from '@material-ui/core/styles';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
         <body>
           <Main />
@@ -62,9 +59,6 @@ MyDocument.getInitialProps = async (ctx) => {
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
-    styles: [
-      ...React.Children.toArray(initialProps.styles),
-      sheets.getStyleElement(),
-    ],
+    styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
   };
 };

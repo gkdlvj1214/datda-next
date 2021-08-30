@@ -1,11 +1,12 @@
 // index.tsx
-import { Box } from "@material-ui/core";
-import Intro from "@src/components/intro/Intro";
-
-export default function Home() {
+import { FC } from 'react';
+import Intro from '../src/components/intro/Intro';
+const Home: FC = () => {
   return (
-    <Box>
+    <div>
       <Intro />
-    </Box>
+    </div>
   );
-}
+};
+
+export default Home;
