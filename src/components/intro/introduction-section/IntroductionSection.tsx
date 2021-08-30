@@ -21,7 +21,7 @@ export default function IntroductionSection() {
             아래 버튼은 자동로그인 버튼입니다. 미리 구축된 Datda를 기반으로
             사이트를 둘러볼 수 있습니다.
           </Typography>
-          <Box>
+          <Box className={classes.guestButtonBox}>
             <Button variant="contained" color="primary">
               기관장 로그인
             </Button>

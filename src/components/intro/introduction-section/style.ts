@@ -24,7 +24,13 @@ const styles = makeStyles((theme: Theme) =>
       background: "rgba(255,255,255,0.35)",
       borderRadius: 20,
       border: "1px solid",
+      "& $guestButtonBox": {
+        "& button + button": {
+          marginLeft: theme.spacing(2),
+        },
+      },
     },
+    guestButtonBox: {},
   })
 );
 
