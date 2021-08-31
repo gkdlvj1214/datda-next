@@ -26,7 +26,7 @@ const styles = makeStyles((theme: Theme) =>
       border: "1px solid",
       "& $guestButtonBox": {
         "& button + button": {
-          marginLeft: theme.spacing(2),
+          marginLeft: theme.spacing(5),
         },
       },
     },

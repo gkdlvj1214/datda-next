@@ -1,10 +1,11 @@
-import { Box } from '@material-ui/core';
-import FifthSection from './fifth-section/FifthSection';
-import FirstSection from './first-section/FirstSection';
-import FourthSection from './fourth-section/FourthSection';
-import IntroductionSection from './introduction-section/IntroductionSection';
-import SecondSection from './second-section/SecondSection';
-import ThirdSection from './third-section/ThirdSection';
+import { Box } from "@material-ui/core";
+import FifthSection from "./components/fifth-section/FifthSection";
+import FirstSection from "./components/first-section/FirstSection";
+import FourthSection from "./components/fourth-section/FourthSection";
+import IntroductionSection from "./components/introduction-section/IntroductionSection";
+import SecondSection from "./components/second-section/SecondSection";
+import SixthSection from "./components/sixth-section/SixthSection";
+import ThirdSection from "./components/third-section/ThirdSection";
 
 export default function Intro() {
   return (
@@ -15,6 +16,7 @@ export default function Intro() {
       <ThirdSection />
       <FourthSection />
       <FifthSection />
+      <SixthSection />
     </Box>
   );
 }
