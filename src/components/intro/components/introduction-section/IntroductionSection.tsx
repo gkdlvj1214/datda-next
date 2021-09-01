@@ -1,13 +1,15 @@
 import { Box, Container, Typography, Button } from "@material-ui/core";
-import Router from "next/router";
+
 import useStyles from "./style";
 
-export default function IntroductionSection() {
-  const classes = useStyles();
+type Props = {
+  onLogin: () => void;
+  onSignup: () => void;
+};
 
-  const onClickMovetoLogin = () => {
-    Router.push("/login");
-  };
+export default function IntroductionSection(props: Props) {
+  const { onLogin, onSignup } = props;
+  const classes = useStyles();
 
   return (
     <Box display="flex" className={classes.root}>
@@ -17,10 +19,12 @@ export default function IntroductionSection() {
           <Typography variant="h3">더욱 스마트하게 관리하기</Typography>
         </Box>
         <Box className={classes.buttonBox}>
-          <Button variant="contained" onClick={onClickMovetoLogin}>
+          <Button variant="contained" onClick={onLogin}>
             로그인
           </Button>
-          <Button variant="contained">회원가입</Button>
+          <Button variant="contained" onClick={onSignup}>
+            회원가입
+          </Button>
         </Box>
         <Box className={classes.guestLoginBox}>
           <Typography variant="h5">Guest 로그인</Typography>
