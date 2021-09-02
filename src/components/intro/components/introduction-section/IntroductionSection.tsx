@@ -19,27 +19,49 @@ export default function IntroductionSection(props: Props) {
           <Typography variant="h3">더욱 스마트하게 관리하기</Typography>
         </Box>
         <Box className={classes.buttonBox}>
-          <Button variant="contained" onClick={onLogin}>
+          <Button
+            variant="contained"
+            onClick={onLogin}
+            className={classes.defaultButton}
+          >
             로그인
           </Button>
-          <Button variant="contained" onClick={onSignup}>
+          <Button
+            variant="contained"
+            onClick={onSignup}
+            className={classes.defaultButton}
+          >
             회원가입
           </Button>
         </Box>
         <Box className={classes.guestLoginBox}>
-          <Typography variant="h5">Guest 로그인</Typography>
-          <Typography variant="h6">
-            아래 버튼은 자동로그인 버튼입니다. 미리 구축된 Datda를 기반으로
-            사이트를 둘러볼 수 있습니다.
-          </Typography>
+          <Box>
+            <Typography variant="h5">Guest 로그인</Typography>
+            <Typography variant="h6">
+              아래 버튼은 자동로그인 버튼입니다. 미리 구축된 Datda를 기반으로
+              사이트를 둘러볼 수 있습니다.
+            </Typography>
+          </Box>
           <Box className={classes.guestButtonBox}>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              className={classes.containedButton}
+            >
               기관장 로그인
             </Button>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              className={classes.containedButton}
+            >
               선생님 로그인
             </Button>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              className={classes.containedButton}
+            >
               학부모 로그인
             </Button>
           </Box>

@@ -6,8 +6,8 @@ export default function SixthSection() {
 
   return (
     <Box display="flex" className={classes.root}>
-      <Box>
-        <Box>
+      <Box className={classes.contentBox}>
+        <Box className={classes.textBox}>
           <Typography variant="h3">빠르게</Typography>
           <Typography variant="h3">차량정보</Typography>
           <Typography variant="h3">확인하기</Typography>
@@ -18,6 +18,9 @@ export default function SixthSection() {
           <Typography variant="h5">
             궁금할 때 닿다를 통해 빠르게 확인하세요
           </Typography>
+        </Box>
+        <Box className={classes.imageBox}>
+          <img src="/images/intro_web/intro7_graphic.svg" />
         </Box>
       </Box>
     </Box>
